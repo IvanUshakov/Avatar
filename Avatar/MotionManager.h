@@ -13,9 +13,9 @@
 
 @optional
 
-- (void)didChangeYaw:(CGFloat)newYaw;
-- (void)didChangeRoll:(CGFloat)newRoll;
-- (void)didChangePitch:(CGFloat)newPitch;
+- (void)didChangeYaw:(CGFloat)yawDelta;
+- (void)didChangeRoll:(CGFloat)rollDelta;
+- (void)didChangePitch:(CGFloat)pitchDelta;
 
 @end
 

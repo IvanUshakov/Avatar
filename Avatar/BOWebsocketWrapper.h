@@ -21,6 +21,6 @@
 @property (nonatomic, weak) id <BOWebSocketWrapperDelegate> delegate;
 
 - (instancetype)initWithURL:(NSURL *)URL NS_DESIGNATED_INITIALIZER;
-- (void)send:(NSString *)message;
+- (void)send:(id)message;
 
 @end

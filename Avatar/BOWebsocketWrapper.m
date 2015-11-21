@@ -36,7 +36,7 @@
     return self;
 }
 
-- (void)send:(NSString *)message
+- (void)send:(id)message
 {
     [self openIfNeeded];
     

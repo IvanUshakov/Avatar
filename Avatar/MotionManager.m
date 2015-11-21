@@ -9,7 +9,9 @@
 @import Foundation;
 @import QuartzCore;
 
-static CGFloat minSignificantChange = 0.01;
+static CGFloat minSignificantChangeYaw = 0.02;
+static CGFloat minSignificantChangeRoll = 0.02;
+static CGFloat minSignificantChangePitch = 0.02;
 
 #import "MotionManager.h"
 
@@ -52,23 +54,19 @@ static CGFloat minSignificantChange = 0.01;
     double roll = self.motionManager.deviceMotion.attitude.roll;
     double pitch = self.motionManager.deviceMotion.attitude.pitch;
     
-    if ((fabs(self.prevYaw - yaw) > minSignificantChange) &&
+    if ((fabs(self.prevYaw - yaw) > minSignificantChangeYaw) &&
         ([self.delegate respondsToSelector:@selector(didChangeYaw:)])) {
-        [self.delegate didChangeYaw:yaw];
-
-//        Degrees
-//        CGFloat degrees = [self degreesWithRadians:yaw];
-//        [self.delegate didChangeYaw:degrees];
+        [self.delegate didChangeYaw:(self.prevYaw - yaw)];
     }
     
-    if ((fabs(self.prevRoll - roll) > minSignificantChange) &&
+    if ((fabs(self.prevRoll - roll) > minSignificantChangeRoll) &&
         ([self.delegate respondsToSelector:@selector(didChangeRoll:)])) {
-        [self.delegate didChangeRoll:roll];
+        [self.delegate didChangeRoll:(self.prevRoll - roll)];
     }
     
-    if ((fabs(self.prevPitch - pitch) > minSignificantChange) &&
+    if ((fabs(self.prevPitch - pitch) > minSignificantChangePitch) &&
         ([self.delegate respondsToSelector:@selector(didChangePitch:)])) {
-        [self.delegate didChangePitch:pitch];
+        [self.delegate didChangePitch:(self.prevPitch - pitch)];
     }
     
     self.prevYaw = yaw;
