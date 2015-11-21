@@ -72,18 +72,7 @@
 
 - (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message;
 {
-    NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
-    
-    NSError *errorOrNil = nil;
-    
-    id jsonObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:&errorOrNil];
-    
-    if (errorOrNil) {
-        NSLog(@"%@", errorOrNil.userInfo);
-        return;
-    }
-    
-    [self.delegate webSocket:self didReceiveMessage:jsonObject];
+    [self.delegate webSocket:self didReceiveMessage:message];
 }
 
 - (void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean;
