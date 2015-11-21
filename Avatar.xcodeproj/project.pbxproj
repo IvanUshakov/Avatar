@@ -10,6 +10,8 @@
 		1B7CC57ACD2AD8DCED48A2CF /* Pods_Avatar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C39A72487D7C5518AC91EC /* Pods_Avatar.framework */; };
 		7D89795C1C00A32E00FE2461 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D89795B1C00A32E00FE2461 /* CoreMotion.framework */; };
 		7D89795F1C00A33600FE2461 /* MotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D89795D1C00A33600FE2461 /* MotionManager.m */; };
+		7D8979631C00AF2000FE2461 /* BOWebsocketWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8979621C00AF2000FE2461 /* BOWebsocketWrapper.m */; };
+		7D8979661C00AF2E00FE2461 /* NSMutableArray+QueueAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8979651C00AF2E00FE2461 /* NSMutableArray+QueueAdditions.m */; };
 		7DEE27C31C0067250056180C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE27C21C0067250056180C /* main.m */; };
 		7DEE27C61C0067250056180C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE27C51C0067250056180C /* AppDelegate.m */; };
 		7DEE27C91C0067250056180C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE27C81C0067250056180C /* ViewController.m */; };
@@ -27,6 +29,10 @@
 		7D89795B1C00A32E00FE2461 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		7D89795D1C00A33600FE2461 /* MotionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionManager.m; sourceTree = "<group>"; };
 		7D89795E1C00A33600FE2461 /* MotionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionManager.h; sourceTree = "<group>"; };
+		7D8979611C00AF2000FE2461 /* BOWebsocketWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOWebsocketWrapper.h; sourceTree = "<group>"; };
+		7D8979621C00AF2000FE2461 /* BOWebsocketWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOWebsocketWrapper.m; sourceTree = "<group>"; };
+		7D8979641C00AF2E00FE2461 /* NSMutableArray+QueueAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+QueueAdditions.h"; sourceTree = "<group>"; };
+		7D8979651C00AF2E00FE2461 /* NSMutableArray+QueueAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+QueueAdditions.m"; sourceTree = "<group>"; };
 		7DEE27BE1C0067250056180C /* Avatar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avatar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DEE27C21C0067250056180C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7DEE27C41C0067250056180C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,6 +101,10 @@
 		7DEE27C01C0067250056180C /* Avatar */ = {
 			isa = PBXGroup;
 			children = (
+				7D8979611C00AF2000FE2461 /* BOWebsocketWrapper.h */,
+				7D8979621C00AF2000FE2461 /* BOWebsocketWrapper.m */,
+				7D8979641C00AF2E00FE2461 /* NSMutableArray+QueueAdditions.h */,
+				7D8979651C00AF2E00FE2461 /* NSMutableArray+QueueAdditions.m */,
 				7D89795D1C00A33600FE2461 /* MotionManager.m */,
 				7D89795E1C00A33600FE2461 /* MotionManager.h */,
 				7DEE27C41C0067250056180C /* AppDelegate.h */,
@@ -240,8 +250,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DEE27C91C0067250056180C /* ViewController.m in Sources */,
+				7D8979661C00AF2E00FE2461 /* NSMutableArray+QueueAdditions.m in Sources */,
 				7DEE27C61C0067250056180C /* AppDelegate.m in Sources */,
 				7DEE27C31C0067250056180C /* main.m in Sources */,
+				7D8979631C00AF2000FE2461 /* BOWebsocketWrapper.m in Sources */,
 				7D89795F1C00A33600FE2461 /* MotionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
