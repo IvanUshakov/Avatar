@@ -8,12 +8,13 @@
 
 @import UIKit;
 
-#import "MotionManager.h"
+#import "MotionClient.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (nonatomic, strong) MotionManager *motionManager;
+
+@property (nonatomic, strong) MotionClient *motionClient;
 
 @end
 

@@ -6,6 +6,7 @@
 //  Copyright © 2015 AlexEdunov. All rights reserved.
 //
 
+@import UIKit;
 @import CoreMotion;
 
 @protocol MotionManagerDelegate <NSObject>

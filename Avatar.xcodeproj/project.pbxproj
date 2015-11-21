@@ -12,6 +12,7 @@
 		7D89795F1C00A33600FE2461 /* MotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D89795D1C00A33600FE2461 /* MotionManager.m */; };
 		7D8979631C00AF2000FE2461 /* BOWebsocketWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8979621C00AF2000FE2461 /* BOWebsocketWrapper.m */; };
 		7D8979661C00AF2E00FE2461 /* NSMutableArray+QueueAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8979651C00AF2E00FE2461 /* NSMutableArray+QueueAdditions.m */; };
+		7D8979691C00BD8F00FE2461 /* MotionClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8979681C00BD8F00FE2461 /* MotionClient.m */; };
 		7DEE27C31C0067250056180C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE27C21C0067250056180C /* main.m */; };
 		7DEE27C61C0067250056180C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE27C51C0067250056180C /* AppDelegate.m */; };
 		7DEE27C91C0067250056180C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE27C81C0067250056180C /* ViewController.m */; };
@@ -33,6 +34,8 @@
 		7D8979621C00AF2000FE2461 /* BOWebsocketWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOWebsocketWrapper.m; sourceTree = "<group>"; };
 		7D8979641C00AF2E00FE2461 /* NSMutableArray+QueueAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+QueueAdditions.h"; sourceTree = "<group>"; };
 		7D8979651C00AF2E00FE2461 /* NSMutableArray+QueueAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+QueueAdditions.m"; sourceTree = "<group>"; };
+		7D8979671C00BD8F00FE2461 /* MotionClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionClient.h; sourceTree = "<group>"; };
+		7D8979681C00BD8F00FE2461 /* MotionClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionClient.m; sourceTree = "<group>"; };
 		7DEE27BE1C0067250056180C /* Avatar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avatar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DEE27C21C0067250056180C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7DEE27C41C0067250056180C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,6 +119,8 @@
 				7DEE27CF1C0067250056180C /* LaunchScreen.storyboard */,
 				7DEE27D21C0067250056180C /* Info.plist */,
 				7DEE27C11C0067250056180C /* Supporting Files */,
+				7D8979671C00BD8F00FE2461 /* MotionClient.h */,
+				7D8979681C00BD8F00FE2461 /* MotionClient.m */,
 			);
 			path = Avatar;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 				7DEE27C61C0067250056180C /* AppDelegate.m in Sources */,
 				7DEE27C31C0067250056180C /* main.m in Sources */,
 				7D8979631C00AF2000FE2461 /* BOWebsocketWrapper.m in Sources */,
+				7D8979691C00BD8F00FE2461 /* MotionClient.m in Sources */,
 				7D89795F1C00A33600FE2461 /* MotionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

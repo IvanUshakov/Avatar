@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate () <MotionManagerDelegate>
+@interface AppDelegate ()
 
 @end
 
@@ -16,22 +16,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.motionManager = [MotionManager new];
-    self.motionManager.delegate = self;
+    self.motionClient = [MotionClient new];
     
     return YES;
-}
-
-#pragma mark - MotionManagerDelegate
-
-- (void)didChangeYaw:(CGFloat)newYaw
-{
-    NSLog(@"Yaw: %.2f", newYaw);
-}
-
-- (void)didChangeRoll:(CGFloat)newRoll
-{
-    NSLog(@"Roll: %.2f", newRoll);
 }
 
 @end
