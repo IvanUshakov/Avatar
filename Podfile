@@ -4,5 +4,6 @@ use_frameworks!
 target 'Avatar' do
     pod 'PBJVideoPlayer'
     pod 'Masonry'
+    pod 'SocketRocket', '~> 0.4.2'
 end
 
