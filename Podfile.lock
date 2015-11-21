@@ -1,0 +1,13 @@
+PODS:
+  - Masonry (0.6.3)
+  - PBJVideoPlayer (0.2.4)
+
+DEPENDENCIES:
+  - Masonry
+  - PBJVideoPlayer
+
+SPEC CHECKSUMS:
+  Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
+  PBJVideoPlayer: 69e94215f248409735db936225f6b92a4b268389
+
+COCOAPODS: 0.39.0
